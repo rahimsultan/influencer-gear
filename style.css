@@ -102,6 +102,26 @@ nav ul li a img {
   max-width: 100%;
 }
 
+/* Company */
+.company {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.company__img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company__img img {
+  max-width: 100%;
+}
+
+/* ========== Mobile Responsive =============== */
+
 @media (max-width: 576px) {
   header {
     padding: 40px 20px;
@@ -131,5 +151,18 @@ nav ul li a img {
   }
   .header__title {
     font-size: 28px;
+  }
+  /* Company */
+  .company {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+  }
+  .company__img {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .company__img img {
+    max-width: 50px;
   }
 }
