@@ -293,89 +293,17 @@ nav ul li a img {
   justify-content: center;
 }
 
-/* ========== Mobile Responsive =============== */
+/* For Laptop Devices */
 
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   header {
     padding: 40px 20px;
   }
-  .logo {
-    font-size: 16px;
-  }
-
-  ul li a,
-  .header__des {
-    font-size: 14px;
-  }
-
-  .header-banner {
-    flex-direction: column-reverse;
-  }
-  .header__content {
-    text-align: center;
-  }
-  .header__title {
-    font-size: 28px;
-  }
-
-  /* Mobile Menu */
-  ul li {
-    display: none;
-  }
-  ul li:last-child {
-    display: block;
-  }
-  .hambarger {
-    display: block;
-    height: 45px;
-    background: rgb(222, 219, 219);
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .hambarger i {
-    font-size: 25px;
-  }
-
-  /* Company */
-  .company {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 40px;
-  }
-  .company__img {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .company__img img {
-    max-width: 50px;
-  }
-
-  /* Product Collection */
-
-  .popular-collection {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .products {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .card {
-    margin: 0 auto;
-  }
-  /* Featured */
   .featured {
-    flex-direction: column-reverse;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    gap: 30px;
+    gap: 20px;
   }
-  .featured h2 {
-    font-size: 24px;
+  .featured__content {
+    max-width: 50%;
   }
 }
 
@@ -465,14 +393,88 @@ nav ul li a img {
   }
 }
 
-@media (max-width: 1024px) {
+/* ========== Mobile Responsive =============== */
+
+@media (max-width: 576px) {
   header {
     padding: 40px 20px;
   }
-  .featured {
+  .logo {
+    font-size: 16px;
+  }
+
+  ul li a,
+  .header__des {
+    font-size: 14px;
+  }
+
+  .header-banner {
+    flex-direction: column-reverse;
+  }
+  .header__content {
+    text-align: center;
+  }
+  .header__title {
+    font-size: 28px;
+  }
+
+  /* Mobile Menu */
+  ul li {
+    display: none;
+  }
+  ul li:last-child {
+    display: block;
+  }
+  .hambarger {
+    display: block;
+    height: 45px;
+    background: rgb(222, 219, 219);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .hambarger i {
+    font-size: 25px;
+  }
+
+  /* Company */
+  .company {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+  }
+  .company__img {
+    flex-wrap: wrap;
     gap: 20px;
   }
-  .featured__content {
-    max-width: 50%;
+  .company__img img {
+    max-width: 50px;
+  }
+
+  /* Product Collection */
+
+  .popular-collection {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .card {
+    margin: 0 auto;
+  }
+  /* Featured */
+  .featured {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 30px;
+  }
+  .featured h2 {
+    font-size: 24px;
   }
 }
