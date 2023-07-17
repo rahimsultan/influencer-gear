@@ -5,3 +5,131 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Header Design */
+
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  color: #3a3a3a;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav ul li a {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+nav ul li a img {
+  max-width: 100%;
+}
+
+.header-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__title {
+  color: #3a3a3a;
+  font-size: 52px;
+  font-weight: 700;
+  max-width: 580px;
+}
+
+.header__des {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 500px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 24px;
+  border-radius: 40px;
+  background-color: #e02c6d;
+  border: none;
+  cursor: pointer;
+}
+
+.btn i {
+  margin-left: 8px;
+}
+
+.header__img {
+  background: url("./images/Circle design.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__img img {
+  max-width: 100%;
+}
+
+@media (max-width: 576px) {
+  header {
+    padding: 40px 20px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .logo {
+    font-size: 16px;
+  }
+  ul {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  ul li a,
+  .header__des {
+    font-size: 14px;
+  }
+
+  .header-banner {
+    flex-direction: column-reverse;
+  }
+  .header__content {
+    text-align: center;
+  }
+  .header__title {
+    font-size: 28px;
+  }
+}
