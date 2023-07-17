@@ -105,8 +105,7 @@ nav ul li a img {
 /* Company */
 .company {
   max-width: 1110px;
-  margin: 0 auto;
-  padding-bottom: 100px;
+  margin: 30px auto;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -114,10 +113,98 @@ nav ul li a img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(
+      90deg,
+      rgba(192, 204, 218, 0.1) 0%,
+      rgba(192, 204, 218, 0.6) 50%,
+      rgba(192, 204, 218, 0.1) 100%
+    )
+    10;
+  padding: 20px 0;
 }
 
 .company__img img {
   max-width: 100%;
+}
+
+/* Popular Products */
+
+.popular-collection {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+}
+
+.popular-collection h2 {
+  color: #3a3a3a;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.more {
+  color: rgba(224.19, 43.9, 108.81, 0.87);
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 700;
+  margin-top: 40px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.card {
+  max-width: 330px;
+  padding: 15px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card__img img {
+  max-width: 100%;
+}
+
+.card__title {
+  color: #18191f;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0px;
+}
+.card__price {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 400;
+  margin-top: 6px;
+}
+.card__ratings {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.card__star i {
+  color: Orange;
+}
+
+.card__des {
+  color: #787885;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 20.02px;
+  letter-spacing: 0.25px;
 }
 
 /* ========== Mobile Responsive =============== */
@@ -164,5 +251,17 @@ nav ul li a img {
   }
   .company__img img {
     max-width: 50px;
+  }
+
+  /* Product Collection */
+
+  .popular-collection {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
