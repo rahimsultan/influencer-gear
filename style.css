@@ -364,10 +364,11 @@ nav ul li a img {
   }
   .company__img {
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 50px;
+    justify-content: center;
   }
   .company__img img {
-    max-width: 50px;
+    max-width: 100%;
   }
 
   /* Product Collection */
@@ -454,9 +455,10 @@ nav ul li a img {
   .company__img {
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
   }
   .company__img img {
-    max-width: 50px;
+    max-width: 65px;
   }
 
   /* Product Collection */
