@@ -229,6 +229,10 @@ nav ul li a img {
   max-width: 100%;
 }
 
+.featured__img {
+  width: 100%;
+}
+
 .featured h2 {
   color: #0a0826;
   font-size: 38px;
@@ -295,7 +299,7 @@ nav ul li a img {
 
 /* For Laptop Devices */
 
-@media (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   header {
     padding: 40px 20px;
   }
@@ -309,7 +313,7 @@ nav ul li a img {
 
 /* ========== Tablet Responsive =============== */
 
-@media (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 768px) {
   header {
     padding: 40px 20px;
   }
@@ -395,7 +399,7 @@ nav ul li a img {
 
 /* ========== Mobile Responsive =============== */
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   header {
     padding: 40px 20px;
   }
